@@ -1,0 +1,81 @@
+{
+  "generation": {
+    "num_images": 100,
+    "dpi": 300,
+    "sheet_size_inches": [34, 22],
+    "margins_inches": 0.75,
+    "placement_area": "bottom_half"
+  },
+  "symbol_placement": {
+    "density_range": [5, 15],
+    "allow_overlaps": false,
+    "collision_padding_pixels": 10
+  },
+  "distortions": {
+    "rotation": {
+      "enabled": true,
+      "range_degrees": [-180, 180]
+    },
+    "scaling": {
+      "enabled": true,
+      "range_factor": [0.4, 0.6]
+    },
+    "flipping": {
+      "enabled": true,
+      "horizontal_probability": 0.3,
+      "vertical_probability": 0.2
+    },
+    "perspective_warp": {
+      "enabled": true,
+      "intensity_range": [0.0, 0.1]
+    },
+    "blur": {
+      "gaussian_blur": {
+        "enabled": true,
+        "radius_range": [0.0, 2.0],
+        "probability": 0.4
+      },
+      "motion_blur": {
+        "enabled": true,
+        "kernel_size_range": [3, 15],
+        "angle_range": [0, 360],
+        "probability": 0.3
+      }
+    },
+    "noise": {
+      "gaussian": {
+        "enabled": true,
+        "variance_range": [0.0, 0.01],
+        "probability": 0.5
+      },
+      "salt_pepper": {
+        "enabled": true,
+        "amount_range": [0.0, 0.05],
+        "probability": 0.3
+      }
+    },
+    "line_effects": {
+      "roughness": {
+        "enabled": true,
+        "intensity_range": [0.0, 2.0],
+        "probability": 0.4
+      },
+      "partial_clipping": {
+        "enabled": true,
+        "clip_percentage_range": [0.0, 0.1],
+        "probability": 0.2
+      }
+    }
+  },
+  "output": {
+    "image_format": "png",
+    "annotation_format": "json",
+    "include_debug_info": false,
+    "save_intermediate_steps": false
+  },
+  "paths": {
+    "symbols_dir": "symbols",
+    "backgrounds_dir": "backgrounds",
+    "output_dir": "output"
+  }
+} 
